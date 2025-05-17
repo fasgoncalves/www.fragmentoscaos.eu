@@ -5,8 +5,41 @@
   <title>Fragmentos do Caos</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    h1 {
-      margin-bottom: 20px;
+    body {
+      display: flex;
+      font-family: Georgia, serif;
+    }
+    nav {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    nav h2 {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin-bottom: 8px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4b0082;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px;
     }
     .year-section {
       margin-top: 40px;
@@ -27,12 +60,33 @@
       font-size: 0.9em;
       margin-left: 10px;
     }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #999;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <h1>🌀 Fragmentos do Caos – Artigos por Ano</h1>
+  <nav>
+    <h2>Anos</h2>
+    <ul>
+<li><a href="#2025">2025</a></li>
+<li><a href="#2016">2016</a></li>
+<li><a href="#2014">2014</a></li>
+<li><a href="#2013">2013</a></li>
+<li><a href="#2012">2012</a></li>
+<li><a href="#2011">2011</a></li>
+<li><a href="#2009">2009</a></li>
+<li><a href="#2007">2007</a></li>
+
+    </ul>
+  </nav>
+  <main>
+    <h1>🌀 Fragmentos do Caos – Artigos por Ano</h1>
 <div class="year-section">
-<h2>2025</h2>
+<h2 id="2025">2025</h2>
 <ul class="article-list">
 <li><a href="lancamento-do-livro-o-reino-dos-abracos.html">Lançamento do Livro : O Rei dos Abraços</a><span> (2025-05-20 12:43:00)</span></li>
 <li><a href="trump-putin-xi-e-a-europa-a-margem-da-historia.html">Trump, Putin, Xi… e a Europa à margem da História</a><span> (2025-05-17 10:26:00)</span></li>
@@ -510,13 +564,13 @@
 </ul>
 </div>
 <div class="year-section">
-<h2>2016</h2>
+<h2 id="2016">2016</h2>
 <ul class="article-list">
 <li><a href="re-pensando-a-virtualizacao-atraves-de-open-source-linux-containers.html">Re-pensando a virtualização através de Open-Source Linux Containers</a><span> (2016-09-29 14:15:00)</span></li>
 </ul>
 </div>
 <div class="year-section">
-<h2>2014</h2>
+<h2 id="2014">2014</h2>
 <ul class="article-list">
 <li><a href="a-nova-economia-da-conceptualidade-e-o-paradigma-da-substituicao-de-atomos-por-bits.html">A nova economia da conceptualidade e o paradigma da substituição de átomos por bits !</a><span> (2014-09-22 13:55:00)</span></li>
 <li><a href="o-despontar-de-uma-nova-ordem-cientifica-e-social-aplicada-a-informacao-e-ao-conhecimento.html">O despontar de uma nova ordem cientifica e social, aplicada à informação e ao conhecimento !</a><span> (2014-09-22 13:53:00)</span></li>
@@ -524,26 +578,26 @@
 </ul>
 </div>
 <div class="year-section">
-<h2>2013</h2>
+<h2 id="2013">2013</h2>
 <ul class="article-list">
 <li><a href="o-software-aberto-uma-oportunidade-para-os-individuos-as-empresas-e-sobretudo-para-portugal.html">O Software aberto - Uma oportunidade para os individuos, as empresas e sobretudo para Portugal !</a><span> (2013-12-02 20:40:00)</span></li>
 <li><a href="scale-out-database-apps-atraves-de-galera-cluster-e-mariadb.html">Scale-Out Database apps através de Galera Cluster e MariaDb</a><span> (2013-11-06 11:29:00)</span></li>
 </ul>
 </div>
 <div class="year-section">
-<h2>2012</h2>
+<h2 id="2012">2012</h2>
 <ul class="article-list">
 <li><a href="o-rad-da-wavemaker-assegura-para-a-nuvem-o-que-o-powerbuild-fez-pelo-client-server.html">O RAD da WaveMaker assegura para a nuvem, o que o PowerBuild fez pelo Client-Server !</a><span> (2012-09-14 15:48:00)</span></li>
 </ul>
 </div>
 <div class="year-section">
-<h2>2011</h2>
+<h2 id="2011">2011</h2>
 <ul class="article-list">
 <li><a href="o-software-social-e-a-producao-social-sao-agora-um-imperativo-do-negocio.html">O software social e a produção social são agora um imperativo do negócio !</a><span> (2011-09-09 09:14:00)</span></li>
 </ul>
 </div>
 <div class="year-section">
-<h2>2009</h2>
+<h2 id="2009">2009</h2>
 <ul class="article-list">
 <li><a href="a-virtualizacao-e-automatizacao-do-data-center-novos-desafios-na-era-da-mobilidade-e-da-colaboracao.html">A Virtualização e Automatização do Data-Center: Novos desafios na Era da Mobilidade e da Colaboração !!</a><span> (2009-12-11 11:45:00)</span></li>
 <li><a href="as-redes-sociais-como-factor-potenciador-da-produtividade-e-inovacao-nas-empresas.html">As redes sociais como factor potenciador da produtividade e inovação nas empresas !!</a><span> (2009-10-29 15:56:00)</span></li>
@@ -555,12 +609,13 @@
 </ul>
 </div>
 <div class="year-section">
-<h2>2007</h2>
+<h2 id="2007">2007</h2>
 <ul class="article-list">
 <li><a href="focalizacao-de-tecnologias-ti-para-2007-2009.html">Focalização de tecnologias TI para 2007-2009</a><span> (2007-02-05 08:10:00)</span></li>
 </ul>
 </div>
 
-  <footer>© Francisco Gonçalves – Fragmentos do Caos</footer>
+    <footer>© Francisco Gonçalves – Fragmentos do Caos</footer>
+  </main>
 </body>
 </html>
